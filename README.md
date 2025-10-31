@@ -2,9 +2,9 @@
 
 **Course:** DSA 210 – Introduction to Data Science
 **Term:** 2025–2026 Fall
-**Project Type:** Individual Scientific Data Project
+**Project Type:** Individual Project
 **Author:** Oguz Temelli
-**Date:** October 31, 2024
+**Date:** October 31, 2025
 
 ---
 
@@ -86,7 +86,7 @@ Students often use phones before bed, possibly disrupting sleep and alertness. T
 | Date      | Task                       |
 | --------- | -------------------------- |
 | Oct 31    | Submit proposal            |
-| Nov 1–28 | Collect data + EDA + tests |
+| Nov 1–28  | Collect data + EDA + tests |
 | Jan 2     | Models + report            |
 | Jan 9     | Final submission           |
 
