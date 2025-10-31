@@ -1,9 +1,9 @@
 # Impact of Phone Usage Before Sleep on Sleep Duration and Daily Energy
 
-**Course:** DSA 210 – Introduction to Data Science  
-**Term:** 2025–2026 Fall  
-**Project Type:** Individual Scientific Data Project  
-**Author:** Oguz Temelli  
+**Course:** DSA 210 – Introduction to Data Science
+**Term:** 2025–2026 Fall
+**Project Type:** Individual Scientific Data Project
+**Author:** Oguz Temelli
 **Date:** October 31, 2024
 
 ---
@@ -11,6 +11,7 @@
 ## Project Goal
 
 Quantify the effect of late-night phone use on:
+
 - Total sleep duration
 - Morning tiredness
 - Daily energy levels
@@ -41,24 +42,25 @@ Students often use phones before bed, possibly disrupting sleep and alertness. T
 
 ## Data Collection
 
-~30 days of self-recorded data:
-- iPhone Screen Time logs
-- Manual entries in Google Sheets for sleep and mood
-- Last phone use before bed
+28 days of self-recorded data (November 1–28, 2024):
+
+- **Sleep data:** Samsung Health automatic tracking
+- **Screen time:** Samsung Digital Wellbeing logs  
+- **Manual entries:** Google Sheets for morning tiredness, energy levels, and last phone use before sleep
 
 ### Variables
 
-| Variable | Description |
-|----------|-------------|
-| date | Day |
-| sleep_duration_hours | Total sleep |
-| bedtime | Time went to bed |
-| wake_time | Time woke up |
-| last_phone_use_minutes_before_sleep | Minutes between last screen use and sleep |
-| total_screen_time_hours | Total daily screen time |
-| screen_time_before_sleep_min | Phone usage in last 2 hours before bedtime |
-| morning_tiredness_1_5 | (1=not tired, 5=very tired) |
-| energy_level_1_5 | Daily energy score |
+| Variable                            | Description                                |
+| ----------------------------------- | ------------------------------------------ |
+| date                                | Day                                        |
+| sleep_duration_hours                | Total sleep                                |
+| bedtime                             | Time went to bed                           |
+| wake_time                           | Time woke up                               |
+| last_phone_use_minutes_before_sleep | Minutes between last screen use and sleep  |
+| total_screen_time_hours             | Total daily screen time                    |
+| screen_time_before_sleep_min        | Phone usage in last 2 hours before bedtime |
+| morning_tiredness_1_5               | (1=not tired, 5=very tired)                |
+| energy_level_1_5                    | Daily energy score                         |
 
 ---
 
@@ -81,12 +83,12 @@ Students often use phones before bed, possibly disrupting sleep and alertness. T
 
 ## Timeline
 
-| Date | Task |
-|------|------|
-| Oct 31 | Submit proposal |
+| Date      | Task                       |
+| --------- | -------------------------- |
+| Oct 31    | Submit proposal            |
 | Nov 1–28 | Collect data + EDA + tests |
-| Jan 2 | Models + report |
-| Jan 9 | Final submission |
+| Jan 2     | Models + report            |
+| Jan 9     | Final submission           |
 
 ---
 
