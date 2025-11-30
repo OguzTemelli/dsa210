@@ -34,15 +34,34 @@ Students often use phones before bed, possibly disrupting sleep and alertness. T
 
 ## Hypotheses
 
-- **H1:** Higher phone usage before bed → shorter sleep
-- **H2:** Shorter sleep → higher morning tiredness
-- **H3:** Higher total daily screen time → lower daily energy
+### H1: Phone Usage Before Bed vs Sleep Duration
+
+- **Null Hypothesis (H₀):** There is no correlation between phone usage before bed and sleep duration (ρ = 0)
+- **Alternative Hypothesis (H₁):** There is a negative correlation between phone usage before bed and sleep duration (ρ < 0)
+- **Test:** Pearson correlation test (one-tailed, negative direction)
+- **Variables:** `screen_time_before_sleep_min` (independent) vs `sleep_duration_hours` (dependent)
+
+### H2: Sleep Duration vs Morning Tiredness
+
+- **Null Hypothesis (H₀):** There is no correlation between sleep duration and morning tiredness (ρ = 0)
+- **Alternative Hypothesis (H₁):** There is a negative correlation between sleep duration and morning tiredness (ρ < 0)
+- **Test:** Pearson correlation test (one-tailed, negative direction)
+- **Variables:** `sleep_duration_hours` (independent) vs `morning_tiredness_1_5` (dependent)
+
+### H3: Total Screen Time vs Daily Energy
+
+- **Null Hypothesis (H₀):** There is no correlation between total daily screen time and daily energy level (ρ = 0)
+- **Alternative Hypothesis (H₁):** There is a negative correlation between total daily screen time and daily energy level (ρ < 0)
+- **Test:** Pearson correlation test (one-tailed, negative direction)
+- **Variables:** `total_screen_time_hours` (independent) vs `energy_level_1_5` (dependent)
+
+**Significance Level:** α = 0.05
 
 ---
 
 ## Data Collection
 
-28 days of self-recorded data (November 1–28, 2024):
+30 days of self-recorded data (November 1–30, 2024):
 
 - **Sleep data:** Samsung Health automatic tracking
 - **Screen time:** Samsung Digital Wellbeing logs  
@@ -86,17 +105,38 @@ Students often use phones before bed, possibly disrupting sleep and alertness. T
 | Date      | Task                       |
 | --------- | -------------------------- |
 | Oct 31    | Submit proposal            |
-| Nov 1–28  | Collect data + EDA + tests |
+| Nov 1–30  | Collect data + EDA + tests |
 | Jan 2     | Models + report            |
 | Jan 9     | Final submission           |
 
 ---
 
-## Expected Results
+## Results
 
-- Plots showing phone behavior vs sleep/energy
-- Significance tests for H1–H3
-- Behavioral recommendations
+### Exploratory Data Analysis (EDA)
+
+- **Dataset:** 30 days of data (November 1–30, 2024)
+- **Missing Values:** None
+- **Key Statistics:**
+  - Average sleep duration: ~7.5 hours
+  - Average screen time before sleep: ~45 minutes
+  - Average total screen time: ~6.5 hours
+  - Average morning tiredness: ~3.0 (1-5 scale)
+  - Average energy level: ~2.0 (1-5 scale)
+
+### Hypothesis Test Results
+
+See `notebooks/hypothesis_tests.ipynb` for detailed statistical analysis.
+
+**Test Method:** Pearson correlation test (one-tailed, α = 0.05)
+
+Results will be updated after running the hypothesis tests notebook.
+
+### Expected Outcomes
+
+- Visualizations showing phone behavior vs sleep/energy relationships
+- Statistical significance tests for all three hypotheses
+- Behavioral recommendations based on findings
 
 ---
 
