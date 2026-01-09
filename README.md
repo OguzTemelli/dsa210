@@ -130,7 +130,9 @@ See `notebooks/hypothesis_tests.ipynb` for detailed statistical analysis.
 
 **Test Method:** Pearson correlation test (one-tailed, α = 0.05)
 
-Results will be updated after running the hypothesis tests notebook.
+**Notebooks:**
+- `notebooks/eda_analysis.ipynb` - Comprehensive exploratory data analysis
+- `notebooks/hypothesis_tests.ipynb` - Statistical hypothesis tests for H1, H2, H3
 
 ### Expected Outcomes
 
