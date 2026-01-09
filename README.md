@@ -85,10 +85,13 @@ Students often use phones before bed, possibly disrupting sleep and alertness. T
 
 ## Methods
 
-- EDA (distributions, missingness, outliers)
-- Correlations and hypothesis tests (t-tests, Pearson r)
-- Regression to predict energy from phone/sleep factors
-- Visualization of key relationships
+- **Exploratory Data Analysis (EDA):** Distributions, missingness, outliers, correlations
+- **Hypothesis Testing:** Pearson correlation tests (one-tailed) for H1, H2, H3
+- **Machine Learning:** Regression models to predict energy level from sleep/phone factors
+  - Linear Regression
+  - Random Forest Regressor
+  - Gradient Boosting Regressor
+- **Visualization:** Key relationships, model predictions, feature importance
 
 ---
 
@@ -130,15 +133,51 @@ See `notebooks/hypothesis_tests.ipynb` for detailed statistical analysis.
 
 **Test Method:** Pearson correlation test (one-tailed, α = 0.05)
 
+**Results:**
+- **H1 (Phone usage before bed vs Sleep duration):** r = -0.455 (negative correlation observed)
+- **H2 (Sleep duration vs Morning tiredness):** r = -0.557 (negative correlation observed)
+- **H3 (Total screen time vs Daily energy):** r = -0.082 (weak negative correlation)
+
+### Machine Learning Results
+
+See `notebooks/ml_analysis.ipynb` for detailed ML analysis.
+
+**Target Variable:** `energy_level_1_5` (daily energy score, 1-5 scale)
+
+**Features Used:**
+- `sleep_duration_hours`
+- `total_screen_time_hours`
+- `screen_time_before_sleep_min`
+- `morning_tiredness_1_5`
+- `last_phone_use_minutes_before_sleep`
+
+**Models Implemented:**
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+**Evaluation:** 5-fold cross-validation with R², MAE, and RMSE metrics
+
 **Notebooks:**
 - `notebooks/eda_analysis.ipynb` - Comprehensive exploratory data analysis
 - `notebooks/hypothesis_tests.ipynb` - Statistical hypothesis tests for H1, H2, H3
+- `notebooks/ml_analysis.ipynb` - Machine learning models for energy level prediction
 
-### Expected Outcomes
+### Key Findings
 
-- Visualizations showing phone behavior vs sleep/energy relationships
-- Statistical significance tests for all three hypotheses
-- Behavioral recommendations based on findings
+1. **Phone Usage and Sleep:** Higher phone usage before bed is associated with shorter sleep duration (r = -0.455)
+2. **Sleep and Tiredness:** Shorter sleep duration is associated with higher morning tiredness (r = -0.557)
+3. **Screen Time and Energy:** Total daily screen time shows a weak negative correlation with daily energy levels (r = -0.082)
+4. **ML Models:** Machine learning models successfully predict energy levels using sleep and phone usage features
+5. **Feature Importance:** Sleep duration and morning tiredness are the most important predictors of daily energy levels
+
+### Behavioral Recommendations
+
+Based on the findings:
+- Reduce phone usage in the 2 hours before bedtime to improve sleep duration
+- Prioritize getting adequate sleep (7-8 hours) to reduce morning tiredness
+- Monitor total daily screen time as it may impact energy levels
+- Focus on sleep quality and duration as primary factors for daily energy
 
 ---
 
